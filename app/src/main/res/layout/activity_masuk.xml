@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".masuk">
+
+    <LinearLayout
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="Email"
+            android:id="@+id/edEmail"
+            android:layout_width="200dp"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:hint="Password"
+            android:id="@+id/edPassword"
+            android:layout_width="200dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnMasuk"
+            android:textSize="30dp"
+            android:text="Masuk"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

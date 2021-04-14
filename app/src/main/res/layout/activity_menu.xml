@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <RelativeLayout
+        android:id="@+id/rlText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtHi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi ...!"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_below="@+id/txtHi"
+            android:id="@+id/txtDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Done"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <ListView
+            android:id="@+id/lvList"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtDone"/>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="6dp"
+        android:src="@drawable/icon_add"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        android:backgroundTint="@color/purple_200"
+        android:elevation="6dp"
+        android:src="@drawable/ic_baseline_login_24"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
