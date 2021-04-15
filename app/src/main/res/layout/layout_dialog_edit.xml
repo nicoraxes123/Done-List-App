@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".addText">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtWhat"
-        android:text="What you gonna do ...?"
+        android:id="@+id/txtData"
+        android:text="Data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_margin="15dp"/>
 
     <EditText
@@ -23,7 +20,7 @@
         android:inputType="text|textMultiLine"
         android:layout_width="match_parent"
         android:layout_margin="15dp"
-        android:layout_height="100dp"/>
+        android:layout_height="60dp"/>
 
     <TextView
         android:id="@+id/tvJam"
@@ -61,23 +58,5 @@
         android:layout_margin="15dp"
         android:layout_height="wrap_content"
         android:focusable="false"/>
-
-    <Button
-        android:id="@+id/btnTambah"
-        android:layout_below="@+id/edInput"
-        android:text="Tambah"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"/>
-
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_below="@+id/edInput"
-        android:text="Edit"
-        android:textStyle="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"/>
 
 </LinearLayout>

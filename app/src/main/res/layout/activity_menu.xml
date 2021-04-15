@@ -23,6 +23,24 @@
 
         <TextView
             android:layout_below="@+id/txtHi"
+            android:id="@+id/txtTodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity To Do"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <ListView
+            android:id="@+id/lvTodo"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/txtTodo"/>
+
+        <TextView
+            android:layout_below="@+id/lvTodo"
             android:id="@+id/txtDone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +51,7 @@
             android:layout_marginTop="15dp"/>
 
         <ListView
-            android:id="@+id/lvList"
+            android:id="@+id/lvDone"
             android:layout_margin="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
